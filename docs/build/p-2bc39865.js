@@ -1,0 +1,1 @@
+import{c as r}from"./p-b5e576b2.js";import"./p-cacfba9f.js";const e="prime.worker",p="stencil.prime.worker",t=new URL("p-519815b5.js",import.meta.url).href,i=new Blob(['importScripts("'+t+'")'],{type:"text/javascript"}),o=URL.createObjectURL(i),m=r(o,"prime.worker","stencil.prime.worker");URL.revokeObjectURL(o);export{m as worker,p as workerMsgId,e as workerName,t as workerPath}
