@@ -1,4 +1,5 @@
-import {Component, Element, h, State} from "@stencil/core";
+import {Component, Element, h, Prop, State} from "@stencil/core";
+import {generatePrims} from "../../prime.worker";
 
 @Component({
   tag: "honey-prime-numbers",
@@ -18,16 +19,27 @@ export class HoneyPrimeNumbers {
    */
   ident: string;
 
-  @State() prims: number[] = [1];
+  @State() prims: number[]=[];
+
+  /**
+   *  Höchste Zahl bis zu der die Primzahlen ermittelt werden.
+   *  Für den Wert -1 werden unendlich lang die Primzahlen ermittelt.
+   *  Auf Grund des trivialen Algorithmus sollte -1 nie verwendet werden.
+   *  Anderenfalls kommt es zu Speicherüberläufen und Einfrieren des Browsers/Rechners.
+   *
+   *  ATTENTION: Don't use the value -1 it is only  for damage tests.
+   */
+  @Prop() ende: number;
 
   public connectedCallback() {
     this.ident = this.hostElement.id ? this.hostElement.id : Math.random().toString(36).substring(7);
+    generatePrims(this.ende, (primeNum) => {
+      console.log('### neue Primzahl:' + primeNum);
+      this.prims.unshift(primeNum)
+      this.prims = [...this.prims];
+    });
   }
 
-
-  protected addPrimeNumber(primeNum: number) {
-    this.prims = [primeNum, ...this.prims]
-  }
 
 
   public render() {
