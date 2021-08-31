@@ -1,4 +1,4 @@
-# honey-template-header
+# honey-prime-numbers-header
 
 
 
@@ -9,13 +9,13 @@
 
 ### Used by
 
- - [honey-template](..)
+ - [honey-prime-numbers](..)
 
 ### Graph
 ```mermaid
 graph TD;
-  honey-template --> honey-template-header
-  style honey-template-header fill:#f9f,stroke:#333,stroke-width:4px
+  honey-prime-numbers --> honey-prime-numbers-header
+  style honey-prime-numbers-header fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

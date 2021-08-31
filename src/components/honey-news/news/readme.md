@@ -1,4 +1,4 @@
-# honey-template
+# honey-prime-numbers
 
 
 
@@ -17,7 +17,7 @@
 
 ### `updateOptions(options: NewsOptions) => Promise<void>`
 
-Update honey-template options
+Update honey-prime-numbers options
 
 #### Returns
 
@@ -30,13 +30,13 @@ Type: `Promise<void>`
 
 ### Used by
 
- - [honey-template](..)
+ - [honey-prime-numbers](..)
 
 ### Graph
 ```mermaid
 graph TD;
-  honey-template --> honey-template-feed
-  style honey-template-feed fill:#f9f,stroke:#333,stroke-width:4px
+  honey-prime-numbers --> honey-prime-numbers-feed
+  style honey-prime-numbers-feed fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

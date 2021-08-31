@@ -1,4 +1,4 @@
-# honey-template
+# honey-prime-numbers
 
 <!-- Auto Generated Below -->
 
@@ -18,19 +18,19 @@
 
 ### Depends on
 
-- [honey-template-header](header)
-- [honey-template-feed](news)
-- [honey-template-feeds](feeds)
-- [honey-template-statistic](statistic)
+- [honey-prime-numbers-header](header)
+- [honey-prime-numbers-feed](news)
+- [honey-prime-numbers-feeds](feeds)
+- [honey-prime-numbers-statistic](statistic)
 
 ### Graph
 ```mermaid
 graph TD;
-  honey-template --> honey-template-header
-  honey-template --> honey-template-feed
-  honey-template --> honey-template-feeds
-  honey-template --> honey-template-statistic
-  style honey-template fill:#f9f,stroke:#333,stroke-width:4px
+  honey-prime-numbers --> honey-prime-numbers-header
+  honey-prime-numbers --> honey-prime-numbers-feed
+  honey-prime-numbers --> honey-prime-numbers-feeds
+  honey-prime-numbers --> honey-prime-numbers-statistic
+  style honey-prime-numbers fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

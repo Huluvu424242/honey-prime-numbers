@@ -1,4 +1,4 @@
-# honey-template-feeds
+# honey-prime-numbers-feeds
 
 
 
@@ -16,13 +16,13 @@
 
 ### Used by
 
- - [honey-template](..)
+ - [honey-prime-numbers](..)
 
 ### Graph
 ```mermaid
 graph TD;
-  honey-template --> honey-template-feeds
-  style honey-template-feeds fill:#f9f,stroke:#333,stroke-width:4px
+  honey-prime-numbers --> honey-prime-numbers-feeds
+  style honey-prime-numbers-feeds fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -1,4 +1,4 @@
-# honey-template-statistic
+# honey-prime-numbers-statistic
 
 
 
@@ -29,13 +29,13 @@ Type: `Promise<void>`
 
 ### Used by
 
- - [honey-template](..)
+ - [honey-prime-numbers](..)
 
 ### Graph
 ```mermaid
 graph TD;
-  honey-template --> honey-template-statistic
-  style honey-template-statistic fill:#f9f,stroke:#333,stroke-width:4px
+  honey-prime-numbers --> honey-prime-numbers-statistic
+  style honey-prime-numbers-statistic fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

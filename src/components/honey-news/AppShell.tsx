@@ -8,7 +8,7 @@ import {News} from "./news/News";
 import {About} from "./snippets/About";
 
 @Component({
-  tag: "honey-template",
+  tag: "honey-prime-numbers",
   styleUrl: "AppShell.css",
   assetsDirs: ['assets'],
   shadow: true
@@ -64,8 +64,8 @@ export class AppShell {
 
 
   @State() options: AppShellOptions = {
-    disabledHostClass: "honey-template-disabled",
-    enabledHostClass: "honey-template",
+    disabledHostClass: "honey-prime-numbers-disabled",
+    enabledHostClass: "honey-prime-numbers",
     disabledTitleText: "News Reader nicht verfügbar",
     titleText: "News Reader",
     ariaLabel: "Neuigkeiten der abonierten Feeds",
@@ -202,18 +202,18 @@ export class AppShell {
         class="paper"
       >
 
-        <honey-template-header/>
+        <honey-prime-numbers-header/>
 
-        {!this.route || this.route === "/" || this.route === "/index.html" || this.route === "/news" ? <honey-template-feed ref={(el) => {
+        {!this.route || this.route === "/" || this.route === "/index.html" || this.route === "/news" ? <honey-prime-numbers-feed ref={(el) => {
           // @ts-ignore
           this.newsFeed = el as HTMLHoneyNewsFeedElement
         }}/> : null}
-        {this.route === "/feeds" ? <honey-template-feeds ref={(el) => {
+        {this.route === "/feeds" ? <honey-prime-numbers-feeds ref={(el) => {
           // @ts-ignore
           this.feedAdministration = el as HTMLHoneyNewsFeedsElement
         }
         }/> : null}
-        {this.route === "/statistic" ? <honey-template-statistic/> : null}
+        {this.route === "/statistic" ? <honey-prime-numbers-statistic/> : null}
         {this.route === "/about" ? <About/> : null}
 
       </Host>
