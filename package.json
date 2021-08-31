@@ -20,9 +20,9 @@
   },
   "keywords": [
     "honey",
-    "news",
-    "rss",
-    "atom",
+    "prime",
+    "numbers",
+    "list",
     "webcomponent",
     "custom-element"
   ],
@@ -45,15 +45,9 @@
   "engines": {
     "node": "14.15.0"
   },
-  "dependencies": {
-    "object-hash": "2.1.1",
-    "rxjs": "6.6.3",
-    "feedme": "2.0.2",
-    "@huluvu424242/liona-feeds": "2.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@stencil/core": "2.5.2",
-    "@stencil/store": "1.4.1",
     "@types/jest": "26.0.22",
     "@types/puppeteer": "5.4.0",
     "jest": "26.6.3",
